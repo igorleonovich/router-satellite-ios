@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "router-satellite-client-swift",
+    name: "router-satellite-swift",
     dependencies: [
         .package(url: "https://github.com/RNCryptor/RNCryptor.git", .upToNextMajor(from: "5.0.0"))
     ],
@@ -12,7 +12,7 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
-            name: "router-satellite-client-swift",
+            name: "router-satellite-swift",
             dependencies: ["RNCryptor"],
             path: "Sources"),
     ]
